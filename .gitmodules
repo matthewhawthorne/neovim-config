@@ -86,6 +86,3 @@
 [submodule "bundle/vim-closetag"]
 	path = bundle/vim-closetag
 	url = git@github.com:alvan/vim-closetag
-[submodule "bundle/completor.vim"]
-	path = bundle/completor.vim
-	url = git@github.com:maralla/completor.vim
