@@ -86,3 +86,12 @@
 [submodule "bundle/vim-closetag"]
 	path = bundle/vim-closetag
 	url = git@github.com:alvan/vim-closetag
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim
+[submodule "bundle/deoplete-jedi"]
+	path = bundle/deoplete-jedi
+	url = git@github.com:zchee/deoplete-jedi
+[submodule "bundle/deoplete-ternjs"]
+	path = bundle/deoplete-ternjs
+	url = git@github.com:carlitux/deoplete-ternjs
