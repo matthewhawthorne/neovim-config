@@ -2,7 +2,7 @@
 "" Setup Plugins """""
 """"""""""""""""""""""
 " All plugins now managed by git submodules + pathogen
-source ~/nvim/bundle/vim-pathogen/autoload/pathogen.vim
+source ~/nvim_config/nvim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 
@@ -20,6 +20,12 @@ set spell spelllang=en_us
 " Search smarter
 set ignorecase
 set smartcase
+
+" Add line numbers
+set number
+
+" Use windows clipboard for yanking
+set clipboard+=unnamedplus
 
 " Show matching ~brackets
 set showmatch
@@ -278,6 +284,13 @@ nnoremap <Leader>wc :call asyncrun#quickfix_toggle(8)<CR>
 nnoremap <Leader>c :call asyncrun#quickfix_toggle(8)<CR>
 nnoremap <Leader>a :AsyncRun<Space>
 nnoremap <Leader>A :ArgWrap<CR>
+
+" Spark UI mappings
+nnoremap <silent> <Leader>sui :! chrome "http://localhost:4040" <enter> <enter>
+
+" Insert line above or below without entering insert mode
+nnoremap <Leader>ij o<Esc>k
+nnoremap <Leader>ik O<Esc>j
 
 " Make completions work the way you'd think they work
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
