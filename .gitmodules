@@ -89,3 +89,6 @@
 [submodule "bundle/completor.vim"]
 	path = bundle/completor.vim
 	url = git@github.com:maralla/completor.vim
+[submodule "bundle/onedark.vim"]
+	path = bundle/onedark.vim
+	url = git@github.com:joshdick/onedark.vim.git
