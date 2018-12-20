@@ -87,11 +87,8 @@ autocmd BufEnter * silent! lcd %:p:h
 """""""""""""""""""""""
 
 " Need to set these options before setting the color
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_contrast_light = 'hard'
-let g:lightline_gruvbox_style = 'hard_left'
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
 
 " Turn on/off some plugins as soon as neovim starts
 let g:jedi#popup_on_dot = 0
@@ -178,7 +175,7 @@ function! LightlineWinnr()
 endfunction
 
 let g:lightline = {
-  \ 'colorscheme': 'gruvbox',
+  \ 'colorscheme': 'onedark',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'gitrepo', 'gitbranch', 'gitgutter' ],
@@ -201,6 +198,7 @@ let g:lightline = {
   \   'winnr': 'LightlineWinnr'
   \ },
   \ }
+let g:airline_theme='onedark'
 
 
 
