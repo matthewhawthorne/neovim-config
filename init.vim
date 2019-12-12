@@ -2,7 +2,7 @@
 "" Setup Plugins """""
 """"""""""""""""""""""
 " All plugins now managed by git submodules + pathogen
-source ~/nvim_config/nvim/bundle/vim-pathogen/autoload/pathogen.vim
+source $XDG_CONFIG_HOME/nvim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 
@@ -292,6 +292,9 @@ nnoremap <silent> <Leader>sui :! chrome "http://localhost:4040" <enter> <enter>
 nnoremap <Leader>ij o<Esc>k
 nnoremap <Leader>ik O<Esc>j
 
+" Spacemacs close nerdtree
+nnoremap <Leader>0 <c-ww>
+
 " Make completions work the way you'd think they work
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -340,3 +343,4 @@ endfunction
 map <Leader>si :call LaunchIPython()<CR>
 map <Leader>sr :call SendToTerminal()<CR>
 map <Leader>ss :call SendNudgeToTerminal()<CR>
+map <Leader>cp :let @+ = 'r"' . expand("%:p") .'"'<CR>
